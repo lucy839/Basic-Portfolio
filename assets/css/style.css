@@ -1,0 +1,162 @@
+/* In all 3 html files */
+body {
+    max-width: 960px;
+    margin-left: 17%;
+    margin-right: 17%;
+    position: relative;        
+}
+
+/* logo with name floating on the left */
+header {
+    margin-left:17%;
+    float: left;      
+    top:0;
+    padding: 2%;
+    font-size:25px;
+}
+
+header, h1, .desc {
+    font-family :'Georgia', Times, Times New Roman, serif;
+}
+
+header, button, .desc{
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+p{
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.topnav a, p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* full width navigation */
+.topnav {
+    background-color:#ffffff;
+    border-bottom: 2px solid #cccccc;
+    position: fixed;
+    Top: 0;
+    left:0;
+    width: 100%;
+    margin-bottom: 20px;
+    z-index:2;
+}
+
+/* navigation links floating on the right */
+.topnav a {
+    float: right;
+    color: #777777;
+    text-align: center;
+    margin-top: 2.5%;   
+    padding: 0% 1% 0% 1%;
+    font-size: 16px;
+    text-decoration: none;
+    border-right: 2px solid #dddddd;
+}
+
+/* last navigation link does not have line afterwards */
+#lastnav {
+    margin-right:16%;
+    border-right: none;
+}
+
+/* bonus */
+a:hover {
+    color: #59CCC6;
+}
+
+section{
+    margin-top: 125px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    padding: 10px 30px 20px 30px;
+    color: #777777;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+h1{
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
+    padding: 10px 0px 25px 0px;
+}
+
+/* always sticks to the bottom & in full-length width */
+footer{
+    background-color: #666666;
+    color: #cccccc;
+    padding:30px 0px 5px 0px;
+    border-top: 5px solid #4aaaa5;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* only in index.html */
+#profilepic{
+    border-radius:50%;
+    float: left;
+    margin:0% 5% 0% 5%;
+}
+
+
+
+/* only in contact.html */
+input{
+    width: 99%;
+    padding: 5px 5px 5px 5px;
+    margin-right: 25px;
+    color: #777777;
+}
+
+button{
+    border: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 2px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #59CCC6;
+}
+
+#message {
+    width : 99.5%;
+}
+
+
+
+/* only in portfolio.html */
+.column {
+    position: relative;
+    float: left;
+    width: 32%;
+    padding:0px 30px 25px 0px;
+}
+  
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom: 25px;
+}
+
+/* Placed within the images near bottom */
+.desc {
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 77.7%
+}
